@@ -7,7 +7,8 @@ const Register = () =>{
 
     const register = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        axios.post('http://localhost:4000/register',{
+        // axios.post('http://localhost:4000/register',{
+        axios.post('https://demoappaws.herokuapp.com/register',{
             username,
             password,
             name
