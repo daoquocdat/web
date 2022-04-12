@@ -6,7 +6,7 @@ const ListUser = () =>{
     const [users, setUsers] = useState<any>([]);
     const getUsers = async () => {
         try {
-            const users = await fetch("http://localhost:4000/users");          
+            const users = await fetch("https://serverappnodejs.herokuapp.com/users");          
             const usersData =await users.json();    
             setUsers(usersData);
         } catch (err) {
